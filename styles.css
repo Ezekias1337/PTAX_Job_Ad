@@ -1,0 +1,96 @@
+body {
+  font-family: "Red Hat Mono", serif;
+}
+
+div.wrap-of-ad {
+  width: 1200px;
+  height: 627px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    #00dcfb,
+    #e9c5fe,
+    #ffcab2,
+    #ff91a2
+  );
+  position: absolute;
+  left: 20px;
+}
+
+div.wrap-of-ad div.row div.col img.background-of-ad {
+  width: 100% !important;
+  max-height: 97% !important;
+  padding-bottom: 15px !important;
+  padding-top: 12px !important;
+  z-index: 0;
+}
+
+div.wrap-of-ad div.row div.col img.company-logo {
+  z-index: 2;
+  position: absolute;
+  top: 4%;
+  left: 31%;
+  width: 100px;
+}
+
+div.wrap-of-ad div.row div.col div.shadow-overlay {
+  background-color: rgba(0, 0, 0, 0.452);
+  z-index: 1;
+  position: absolute;
+  width: 300px;
+  height: 140px;
+  top: 3%;
+  left: 9.25%;
+  border-radius: 10px;
+  animation-duration: 2.5s;
+  animation-name: header-animation;
+}
+
+@keyframes header-animation {
+    from {
+        left: 90.25%;
+    }
+
+    to {
+        left: 9.25%;
+    }
+}
+
+div.wrap-of-ad div.row div.col div.shadow-overlay-two {
+  background-color: rgba(0, 0, 0, 0.452);
+  z-index: 1;
+  position: absolute;
+  width: 500px;
+  height: 340px;
+  top: 40%;
+  left: 24%;
+  border-radius: 10px;
+  color: white;
+
+  animation-duration: 2.5s;
+  animation-name: footer-animation;
+}
+
+
+@keyframes footer-animation {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 40%;
+    }
+}
+
+div.wrap-of-ad div.row div.col {
+  position: relative;
+}
+
+div.wrap-of-ad div.row div.col h1 {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+}
